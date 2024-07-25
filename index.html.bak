@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruckHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TruckHub</h1>
+    </header>
+    <main>
+        <section id="data-entry">
+            <h2>Unos podataka</h2>
+            <form id="dataForm">
+                <!-- Polja za unos podataka -->
+                <label for="driverName">Ime vozača:</label>
+                <input type="text" id="driverName" name="driverName" required>
+                <label for="truckName">Ime kamiona:</label>
+                <input type="text" id="truckName" name="truckName" required>
+                <label for="loadingLocation">Mesto utovara:</label>
+                <input type="text" id="loadingLocation" name="loadingLocation" required>
+                <label for="unloadingLocation">Mesto istovara:</label>
+                <input type="text" id="unloadingLocation" name="unloadingLocation" required>
+                <label for="tripLength">Dužina puta (km):</label>
+                <input type="number" id="tripLength" name="tripLength" required>
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Dodaj podatke</button>
+            </form>
+        </section>
+        <section id="data-view">
+            <h2>Pregled podataka</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Ime vozača</th>
+                        <th>Ime kamiona</th>
+                        <th>Mesto utovara</th>
+                        <th>Mesto istovara</th>
+                        <th>Dužina puta (km)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Uneseni podaci će biti prikazani ovde -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>@copyright All Right Reserved By TTruckOn</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
